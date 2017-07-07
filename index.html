@@ -18,9 +18,10 @@ body {
 }
 .container {
  background: #fff;
- width: 320px;
+ width: 90%;
  padding: 5px 10px 5px 10px;
- margin: 0 auto;
+ margin: 1% auto;
+ text-align:center;
  border-right: 5px solid #fff;
  border-left: 5px solid #fff;
 }
@@ -30,6 +31,14 @@ body {
 </style>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="container">
 	<div class="header"><p>सबसे पहले स्वागत हे आपका हमारी ऍप में। आप हमारी ऍप में बहुत ही अच्छे हिंदी स्टेटस/शायरी/जोक्स देख सकते हे।</p></div>
 <img class="myimg" src="/tour.png"/>
@@ -38,6 +47,7 @@ body {
 <p>३. आप हमें अपने मनपसंद स्टेटस/शायरी/जोक्स भेज सकते हे। </p>
 <p>४. स्टेटस कॉपी करने के लिए, बस उस पर थोड़ी देर तक टच कीजिये। </p>
 <div><center><a href="market://details?id=in.mdsfeed" target="_top"><img width="160px" height="50px" src="/download.png" /></a></center></div>
+<div class="fb-comments" data-href="https://mdsfeed.github.io/" data-numposts="10"></div>
 </div>
 </body>
 </html>
